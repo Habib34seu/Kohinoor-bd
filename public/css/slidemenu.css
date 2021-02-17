@@ -1,0 +1,73 @@
+/*!
+  SlideMenu jQuery Responsive Sliding Menu
+  @name slidemenu.css
+  @description a jQuery plugin for creating a sliding menu
+  @version 1.0.0
+  @author Max Lawrence 
+  @site http://www.avirtum.com
+  @copyright (c) 2016 Max Lawrence (http://www.avirtum.com)
+*/
+.sld-clear-fix {
+    *zoom: 1;
+  }
+  .sld-clear-fix:before,
+  .sld-clear-fix:after {
+    display: table;
+    content: "";
+    line-height: 0;
+  }
+  .sld-clear-fix:after {
+    clear: both;
+  }
+  .slm-wrap {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: -10000px;
+  }
+  .slm-wrap.slm-active {
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+  }
+  .slm-wrap.slm-responsive .slm-slide {
+    left: 0 !important;
+  }
+  .slm-wrap .slm-anchor {
+    position: absolute;
+    display: block;
+    height: 0;
+    width: 0;
+    top: 50%;
+    left: 50%;
+  }
+  .slm-wrap .slm-slide {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    display: block;
+    height: 100%;
+    width: 100%;
+  }
+  .slm-wrap .slm-slide.slm-active {
+    opacity: 1;
+    visibility: visible;
+  }
+  .slm-wrap .slm-slide .slm-data {
+    position: absolute;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+  }
+  .slm-wrap .slm-menu,
+  .slm-wrap .slm-submenu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }

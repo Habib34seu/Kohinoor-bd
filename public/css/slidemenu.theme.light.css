@@ -1,0 +1,88 @@
+.slm-wrap.light-theme {
+    -webkit-transition: opacity 0.4s;
+    transition: opacity 0.4s;
+  }
+  .slm-wrap.light-theme.slm-active {
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  .slm-wrap.light-theme .slm-slide {
+    background-color: #ffffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f2f2f2));
+    background: -webkit-linear-gradient(top, #ffffff, #f2f2f2);
+    background: -moz-linear-gradient(top, #ffffff, #f2f2f2);
+    -webkit-box-shadow: inset 0 2px 2px -2px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0 2px 2px -2px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0 2px 2px -2px rgba(255, 255, 255, 0.3);
+    border: 1px solid #e6e6e6;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-close {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    position: absolute;
+    top: 0px;
+    right: -1px;
+    left: -1px;
+    height: 25px;
+    background-color: #ffffff;
+    color: #444444;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    border-top: none;
+    cursor: pointer;
+    text-align: left;
+    z-index: 2;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-close:hover {
+    background-color: #d9d9d9;
+    color: #222222;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-close:before {
+    content: '\D7';
+    font-size: 20px;
+    line-height: 28px;
+    padding-left: 5px;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-data {
+    padding-top: 25px;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-item > a {
+    -webkit-transition: 0.25s;
+    transition: 0.25s;
+    -webkit-box-shadow: inset 0px 2px 2px -2px rgba(255, 255, 255, 0.3);
+    -moz-box-shadow: inset 0px 2px 2px -2px rgba(255, 255, 255, 0.3);
+    box-shadow: inset 0px 2px 2px -2px rgba(255, 255, 255, 0.3);
+    display: block;
+    color: #444444;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding: 15px 20px;
+    text-decoration: none;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-item > a:hover {
+    background-color: #d9d9d9;
+    color: #222222;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-item.slm-active > a {
+    background-color: #d9d9d9;
+    color: #222222;
+  }
+  .slm-wrap.light-theme .slm-slide .slm-item-has-children a:before {
+    content: "\e69b";
+    position: absolute;
+    right: 10px;
+    display: inline-block;
+    font-size: 20px;
+    line-height: 20px;
+    padding-right: 0px;
+  }
+  .slm-wrap.light-theme.slm-responsive .slm-slide .slm-close {
+    height: 40px;
+    text-align: right;
+    background-color: #f75b00;	
+  }
+  .slm-wrap.light-theme.slm-responsive .slm-slide .slm-close:before {
+    content: '\D7';
+    line-height: 40px;
+    padding-right: 10px;
+  }
+  .slm-wrap.light-theme.slm-responsive .slm-slide .slm-data {
+    padding-top: 40px;
+  }
