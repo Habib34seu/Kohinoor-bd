@@ -168,7 +168,7 @@ a:hover{
 
 .vertical-menu.compact.col > li > a {
     line-height: .5rem;
-	color:#73dcff;
+	color:#ffffff;
 	
 }
 
@@ -179,8 +179,8 @@ a:hover{
 	padding-left: 1.1rem;
 }
 .slide-height{
-	/* height:445px; */
-	height:550px;
+	  height:450px;  
+	/* height:550px; */
 }
 
 #overlay-bg{
@@ -292,6 +292,7 @@ a:hover{
 .partners{
 	
 	background-attachment:fixed;
+	margin-bottom:1%;
 	/* 	  overflow: hidden;
 		background-size: cover; 
 	position: relative;  */
@@ -703,7 +704,7 @@ a:hover{
 	float:right;
 	margin:0.7rem 0 0.2rem 1.5rem;
 	padding:0 0 0 1.5rem;
-	border-left:5px solid #cccccc;
+	border-left:5px solid #42093a;
 	font-weight: 500; 
 	font-family:"Arimo", "Open Sans", sans-serif, serif;
 	width:40%;	

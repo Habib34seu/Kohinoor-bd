@@ -77,12 +77,15 @@
                             <div class="social-media padding20 no-padding-left no-padding-top no-padding-right sub-alt-header">
                                 @include('components.social')
                             </div>
+                            @include('components.overView')
                         </div>
+                        @include('components.businessContract')
                     </div>
                 </div>
             <!----------- Social END  ----------------->	
             </section>
             <!---------------- CONTENT END------------->
+            @include('components.brandCarousel')
             <footer>
                 <!---------------- FOOTER --------------------->
                     @include('components.footer')
