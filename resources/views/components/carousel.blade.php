@@ -16,7 +16,7 @@
 				</div>
 			</div>
 			<div id="overlay-bg"></div><div class="slide">
-            <img src="{{asset('image/product/Fast_wash-01.png')}}"
+            <img src="{{asset('image/slide/Fast_wash-01.png')}}"
                         
                        data-role="fitImage" data-format="fill" />
 				<div class="align-center" id="slide-text">		

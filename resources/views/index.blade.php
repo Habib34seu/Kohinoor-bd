@@ -78,6 +78,8 @@
                                 @include('components.social')
                             </div>
                             @include('components.overView')
+                            <div class="sub-header">Products</div>
+                            @include('components.product')
                         </div>
                         @include('components.businessContract')
                     </div>
@@ -85,7 +87,6 @@
             <!----------- Social END  ----------------->	
             </section>
             <!---------------- CONTENT END------------->
-            @include('components.brandCarousel')
             <footer>
                 <!---------------- FOOTER --------------------->
                     @include('components.footer')

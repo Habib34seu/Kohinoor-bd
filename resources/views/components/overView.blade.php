@@ -32,34 +32,7 @@
     products to Australia, UAE, Kuwait, Saudi Arabia, Bahrain, Qatar and many other countries 
     to come into the list.
 </p>
-<div class="sub-header">Products</div>
-<div class="row padding10 no-padding-left no-padding-right flex-just-sa">
-    <div class="cell colspan3 align-center bg-white shadow product-marg">
-        <a href="javascript:void();" onclick="showDialog('#900')">
-            <div class="image-container padding10">
-                <div class="frame"><img src="{{asset('image/product/Am_Pm-01.png')}}" /></div>
-            </div>			
-            <div class="sub-alt-header padding5 fg-darkBlue">PURE Basic Spice</div>
-            <div class="text-secondary padding5 fg-dark"></div>
-        </a>
-    </div>
-</div>
-<div class="row padding10 no-padding-left no-padding-right flex-just-sa">
-    <div class="cell colspan3 align-center bg-white shadow product-marg">
-        <a href="javascript:void();" onclick="showDialog('#900')">
-            <div class="image-container padding10">
-                <div class="frame"><img src="{{asset('image/product/Am_Pm-01.png')}}" /></div>
-            </div>			
-            <div class="sub-alt-header padding5 fg-darkBlue">PURE Basic Spice</div>
-            <div class="text-secondary padding5 fg-dark"></div>
-        </a>
-    </div>
-</div>
 
 
-<script>
-	function showDialog(id){
-		var dialog = $(id).data('dialog');
-		dialog.open();
-	}
-</script>
+
+
