@@ -2,36 +2,23 @@
     Overview
 </div>
 <p>
-    Advanced Chemical Industries (ACI) Limited is one of the leading conglomerates in Bangladesh, 
-    with a multinational heritage. We have a mission to achieve business excellence through 
-    quality by understanding, accepting, meeting and exceeding customer expectations. We follow
-     International Standards on Quality Management System to ensure consistent quality of products 
-     and services to achieve customer satisfaction.
+Kohinoor Chemical Company (Bangladesh) Limited (KCCL) is the oldest and largest national Soap, Cosmetics and Toiletries manufacturer and marketer of Bangladesh. KCCL started its business in 1956. After the independence of Bangladesh, KCCL became a fully government owned company under the direct control of  Bangladesh Chemical Industries Corporation (BCIC) up to May 05, 1988. A few of the employees, who had been laid off during the liberation war, were re-absorbed in the company. It was transformed into a Public Limited Company under Companies Act 1913 and was named as Kohinoor Chemical Company (Bangladesh) Limited from May 05, 1988.
 <p>
 
-<div class="sub-header">Operations</div>
+<!-- <div class="sub-header">Operations</div>
 <div class="quote-right fg-magenta">
-    Advanced Chemical Industries (ACI) Limited is one of the leading conglomerates in Bangladesh,
+Kohinoor Chemical Company (Bangladesh) Limited (KCCL) is one of the leading conglomerates in Bangladesh,
      with a multinational heritage
 </div>
-<p>The necessity of pure food in consumers' mind especially in the commodity 
-    food business has pushed ACI to fill up the market demand by producing food products. 
-    ACI Foods limited is engaged in manufacturing, marketing, and distribution food products 
-    and condiment under the brand names of 
-    <strong>PURE</strong> and <strong>FUN</strong>. 
-    Our portfolio covers practically basic spices, mixed spices, cereals, 
-    edible oil, snacks and confectionary categories. 
+<p><h1>under construction</h1>
 </p>
 
 
 <div class="sub-header">
     Our Market Presence
 </div>
-<p>We are focusing on improving the food habit of consumers through providing more ready to 
-    cook products and ready to eat as well. ACI foods limited exports Pure and Fun Brand 
-    products to Australia, UAE, Kuwait, Saudi Arabia, Bahrain, Qatar and many other countries 
-    to come into the list.
-</p>
+<p><h1>under construction</h1>
+</p> -->
 
 
 

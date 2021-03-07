@@ -184,6 +184,9 @@ a:hover{
 }
 
 #overlay-bg{
+	/* background-image: url("/image/pattern.png");  */
+	/* background-image: url("{{URL::asset('image/pattern.png')}}") ; */
+	/* background-image: */
 	width:100%;
 	height:100%;
 	position:relative;

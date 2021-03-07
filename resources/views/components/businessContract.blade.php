@@ -7,7 +7,7 @@
                 <dd>Shaheed Tajuddin Ahmed Ave, Dhaka 1208 </dd>
                 <dd>&nbsp;</dd>
                 <dt class="opacity"><span class="mif-phone fg-steel"></span> Phone</dt>
-                <dd>01711-670121</dd>
+                <dd>+88-02-8870133</dd>
                 <dd>&nbsp;</dd>
                 <dt class="opacity"><span class="mif-envelop fg-steel"></span> Email</dt>
                 <dd><a target="_blank" href="mailto:info@kccl-bd.com">info@kccl-bd.com</a></dd>

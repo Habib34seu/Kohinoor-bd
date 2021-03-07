@@ -145,37 +145,45 @@ img.hover-shadow {
 <div class="row">
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Fruity-Lip-balm.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Fruity</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Fruity</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Beautina-Hair-Oil.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Beautina</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Clean-Master.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Clean Master</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Genstar.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Genstar</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
 </div>
 <div class="row">
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Sandalina.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Fruity</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Sandalina</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Tibet-Ball-Soap.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center; ">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Tibet Ball Soap</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Tibet-Lipjel.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center;">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Tibet Lipjel</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
   <div class="column cell colspan3 align-center bg-white shadow product-marg" style="margin-top: 2%;">
     <img src="{{asset('image/brand/Tibet-Luxury-Soap.png')}}" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
-    <h5 style="text-align: center;">Beautina</h5>
+    <div class="sub-alt-header padding5 fg-darkBlue">Tibet Luxury Soap</div>
+    <div class="text-secondary padding5 fg-dark"></div>
   </div>
 </div>
 

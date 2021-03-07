@@ -3,7 +3,8 @@
 		<div class="row padding40 no-padding-left no-padding-right">
 			<div class="cell colspan3 align-center">
 				
-                <div class="minor-header fg-grayLighter">&copy; 2021 - KOHINOOR CHEMICAL CO. (BD) LTD. All Rights Reserved</div>
+                <div class="minor-header fg-grayLighter"
+                style="margin-top: 18%;">&copy; 2021 - Kohinoor Chemical Company (Bangladesh) Limited. All Rights Reserved</div>
 			</div>
 			<div class="cell colspan3">
 				<ul class="vertical-menu compact col set-border no-border-right no-border-top no-border-bottom padding10 no-padding-left bd-lightBlue">
