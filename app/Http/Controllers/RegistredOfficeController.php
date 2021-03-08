@@ -14,7 +14,9 @@ class RegistredOfficeController extends Controller
      */
     public function index()
     {
-        //
+
+        $registredOffice = RegistredOffice::get();
+        return view('adminPage.registerdOffice.index',['registredOffice'=>$registredOffice]);
     }
 
     /**

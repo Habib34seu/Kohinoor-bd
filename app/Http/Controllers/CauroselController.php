@@ -14,7 +14,8 @@ class CauroselController extends Controller
      */
     public function index()
     {
-        //
+        $caurosel = Caurosel::get();
+        return view('adminPage.carosuel.index',['caurosel'=>$caurosel]);
     }
 
     /**

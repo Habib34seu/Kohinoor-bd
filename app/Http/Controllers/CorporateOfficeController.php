@@ -14,7 +14,9 @@ class CorporateOfficeController extends Controller
      */
     public function index()
     {
-        //
+
+        $corporate = CorporateOffice :: get();
+        return view('adminPage.corporateOffice.index',['corporate'=>$corporate]);
     }
 
     /**

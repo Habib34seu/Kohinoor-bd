@@ -14,3 +14,6 @@ Route::get('/bordOfDirector', 'App\Http\Controllers\BordOfDirectorsController@in
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::get('/caurosel', [App\Http\Controllers\CauroselController::class, 'index'])->name('caurosel');
+Route::get('/registerdOffice', [App\Http\Controllers\RegistredOfficeController::class, 'index'])->name('registerdOffice');
+Route::get('/corporateOffice', [App\Http\Controllers\CorporateOfficeController::class, 'index'])->name('corporateOffice');
