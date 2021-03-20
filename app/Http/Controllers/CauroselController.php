@@ -18,15 +18,7 @@ class CauroselController extends Controller
         return view('adminPage.carosuel.index',['caurosel'=>$caurosel]);
     }
 
-    /**
-     * Show the form for creating a new resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
-    public function create()
-    {
-        //
-    }
+    
 
     /**
      * Store a newly created resource in storage.
@@ -36,7 +28,19 @@ class CauroselController extends Controller
      */
     public function store(Request $request)
     {
-        //
+                $request->validate([
+                    'image' =>'required',
+                ]);
+                $fileName = null;
+                if (request()->hasFile('image')) {
+                    $file = request()->file('image');
+                    $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+                    $file->move('./uploades/caurosel/', $fileName);    
+                }
+                $caurosel=Caurosel::create([ 
+                    'image' => $fileName,
+                ]);
+            return response()->json($caurosel,200);
     }
 
     /**

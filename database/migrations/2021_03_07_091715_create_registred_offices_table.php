@@ -19,6 +19,7 @@ class CreateRegistredOfficesTable extends Migration
             $table->string('phone');
             $table->string('fax');
             $table->string('email');
+            $table->string('web');
             $table->timestamps();
         });
     }

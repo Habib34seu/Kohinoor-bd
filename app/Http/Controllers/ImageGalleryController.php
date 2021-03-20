@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\CorporateOffice;
+use App\Models\ImageGallery;
 use Illuminate\Http\Request;
 
-class CorporateOfficeController extends Controller
+class ImageGalleryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,9 +14,7 @@ class CorporateOfficeController extends Controller
      */
     public function index()
     {
-
-        $corporate = CorporateOffice :: get();
-        return view('adminPage.corporateOffice.index',['corporate'=>$corporate]);
+        return view('imageGlry.index');
     }
 
     /**
@@ -26,7 +24,7 @@ class CorporateOfficeController extends Controller
      */
     public function create()
     {
-        
+        //
     }
 
     /**
@@ -37,29 +35,16 @@ class CorporateOfficeController extends Controller
      */
     public function store(Request $request)
     {
-        $request->validate([
-            'address' =>'required',
-            'email' =>'required',
-            'phone' =>'required',
-            'fax' =>'required',
-        ]);
-        $corporateOffice=CorporateOffice::create([ 
-            'address' => $request->address,
-            'email' => $request->email,
-            'phone' => $request->phone,
-            'fax' => $request->fax,
-
-        ]);
-    return response()->json($corporateOffice,200);
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\CorporateOffice  $corporateOffice
+     * @param  \App\Models\ImageGallery  $imageGallery
      * @return \Illuminate\Http\Response
      */
-    public function show(CorporateOffice $corporateOffice)
+    public function show(ImageGallery $imageGallery)
     {
         //
     }
@@ -67,10 +52,10 @@ class CorporateOfficeController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\CorporateOffice  $corporateOffice
+     * @param  \App\Models\ImageGallery  $imageGallery
      * @return \Illuminate\Http\Response
      */
-    public function edit(CorporateOffice $corporateOffice)
+    public function edit(ImageGallery $imageGallery)
     {
         //
     }
@@ -79,10 +64,10 @@ class CorporateOfficeController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\CorporateOffice  $corporateOffice
+     * @param  \App\Models\ImageGallery  $imageGallery
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, CorporateOffice $corporateOffice)
+    public function update(Request $request, ImageGallery $imageGallery)
     {
         //
     }
@@ -90,10 +75,10 @@ class CorporateOfficeController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\CorporateOffice  $corporateOffice
+     * @param  \App\Models\ImageGallery  $imageGallery
      * @return \Illuminate\Http\Response
      */
-    public function destroy(CorporateOffice $corporateOffice)
+    public function destroy(ImageGallery $imageGallery)
     {
         //
     }

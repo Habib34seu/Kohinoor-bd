@@ -37,6 +37,9 @@
 			<!-- start-smoth-scrolling -->
 			<script src="https://cdnjs.cloudflare.com/ajax/libs/prettify/r298/prettify.js" type="text/javascript"></script>
  
+            <script type="text/javascript" src="{{asset('js/unitegallery.min.js')}}"></script>
+            <script type="text/javascript" src="{{asset('js/ug-theme-tiles.js')}}"></script>
+            <link rel="stylesheet" type="text/css" href="{{asset('css/unite-gallery.css')}}" />
             
         <!-- start AjaxSearch header -->
         <script type="text/javascript">
@@ -64,28 +67,7 @@
         
 		<!--------- Carousel ---------->
 
-            <section>
-              @include('components.carousel')
-            </section>
-		<!----------- END Carousel ----------------->	
-        <!---------------- CONTENT START ------------->
-            <section style="margin-top: 5%;">
-            <!----------- Social START ----------------->	
-                <div class="container">
-                    <div class="row">
-                        <div class="cell colspan9 padding20 main-text"  style="background-color:">
-                            <div class="social-media padding20 no-padding-left no-padding-top no-padding-right sub-alt-header">
-                                @include('components.social')
-                            </div>
-                            @include('components.overView')
-                            <div class="sub-header"style="margin-top: 10%;">Products</div>
-                            @include('components.product')
-                        </div>
-                        @include('components.businessContract')
-                    </div>
-                </div>
-            <!----------- Social END  ----------------->	
-            </section>
+            @yield('content')
             <!---------------- CONTENT END------------->
             <footer>
                 <!---------------- FOOTER --------------------->
@@ -120,5 +102,31 @@
             ga('send', 'pageview');
 
         </script> 
+        <script type="text/javascript">
+
+jQuery(document).ready(function(){
+
+    jQuery("#gallery").unitegallery({
+        theme_enable_preloader: true,
+        tiles_type: "nested",					//must option for the tiles - justified type
+         tiles_enable_transition: true,			//enable transition when screen width change
+        tiles_space_between_cols: 3,			//space between images
+        tiles_space_between_cols_mobile: 3,     //space between cols for mobile type
+         tiles_nested_optimal_tile_width: 250,	// tiles optimal width
+        tiles_min_columns: 2,
+        tile_enable_image_effect:false,
+        tile_enable_overlay:true,
+        tile_enable_icons:false,
+        tile_enable_shadow:false,
+        lightbox_overlay_color:null,					
+        lightbox_overlay_opacity:.9,					
+        lightbox_top_panel_opacity: null,			
+        lightbox_textpanel_enable_description: true,
+
+    });
+});
+
+</script>
+        
     </body>
 </html>

@@ -15,8 +15,7 @@ class CreateCauroselsTable extends Migration
     {
         Schema::create('caurosels', function (Blueprint $table) {
             $table->id();
-            $table->string('image');
-            $table->string('status');
+            $table->string('image')->nullable();
             $table->timestamps();
         });
     }

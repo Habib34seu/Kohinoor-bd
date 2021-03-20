@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCorporateOfficesTable extends Migration
+class CreateVideoGalleriesTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,13 +13,10 @@ class CreateCorporateOfficesTable extends Migration
      */
     public function up()
     {
-        Schema::create('corporate_offices', function (Blueprint $table) {
+        Schema::create('video_galleries', function (Blueprint $table) {
             $table->id();
-            $table->string('address');
-            $table->string('phone');
-            $table->string('fax');
-            $table->string('email');
-            $table->string('web');
+            $table->string('name');
+            $table->string('video');
             $table->timestamps();
         });
     }
@@ -31,6 +28,6 @@ class CreateCorporateOfficesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('corporate_offices');
+        Schema::dropIfExists('video_galleries');
     }
 }

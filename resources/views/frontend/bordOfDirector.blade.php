@@ -1,3 +1,5 @@
+@extends('index')
+@section('content')
 <section class="container">
     <div class="row">
         <div class="cell colspan9 padding20 bg-default" style="background-color:#f4f4f4">             
@@ -11,7 +13,8 @@
                     </a>
                 </div>
                 <div data-role="charm" data-position="top" id="id1770" class="bg-darkCobalt fg-white charm top-side" style="opacity: 1; display: none;">
-                    <div class="container"> 	
+                    <div class="container"> 
+                   
                         <h3>Mr. Mohammad Obaidul Karim, <small class="fg-grayLighter">Chairman</small></h3>
                         <p class="opacity align-justify">
                             Mr. Mohammad Obaidul Karim is a distinguished self-achieved industrialist & businessman. Mr. Karim’s business career started in the early 1980s with his first pharmaceutical company named Orion Laboratories Limited, which is now known as Orion Pharma Limited. Mr. Karim turned the company into one of the most successful businesses of the country. Later in 1992-1993, Mr. Karim acquired the then ailing
@@ -229,7 +232,7 @@
             </div>
             <div class="row"> </div>
         </div>
-        <div class="cell colspan3 padding20 no-padding-right corporate-right right-panel" style="margin-top: -5.5%;">
+        <div class="cell colspan3 padding20 no-padding-right corporate-right right-panel" style="margin-top: 1.5%;">
             <div class="padding30 no-padding-top">
                 <!-- AddToAny BEGIN -->
                 <script async="" src="https://static.addtoany.com/menu/page.js"></script>
@@ -238,37 +241,42 @@
             <div>
                 <fieldset class="dtn-outline">
                         <legend class="sub-header align-center">Registered Office and Factory</legend>
-                    <dl>
-                        <dt class="opacity"><span class="mif-location fg-steel"></span>Address</dt>
-                        <dd>36, Shahid Tajuddin Ahmed Sarani Tejgaon I/A, Dhaka-1208</dd>
-                        <dd>&nbsp;</dd>
-                        <dt class="opacity"><span class="mif-phone fg-steel"></span> Phone</dt>
-                        <dd>+88-02-8891267-70</dd>
-                        <dd>&nbsp;</dd>
-                        <dt class="opacity"><span class="mif-printer fg-steel"></span> Fax</dt>
-                        <dd>+88-02-8891523</dd>
-                        <dt class="opacity"><span class="mif-envelop fg-steel"></span> Email</dt>
-                        <dd><a target="_blank" href="mailto:info@kccl-bd.com">info@kccl-bd.com</a></dd>
-                        <dd>&nbsp;</dd>
-                        <dt class="opacity"><span class="mif-display fg-steel"></span> Website</dt>
-                        <dd><a href="http://www.kohinoor-bd.com/" target="_blank">http://www.kohinoor-bd.com/</a></dd>
-                    </dl>	
+                    @foreach($corporateOffice as $cr)
+                        <dl>
+                            <dt class="opacity"><span class="mif-location fg-steel"></span>Address</dt>
+                            <dd>{{$cr->address}}</dd>
+                            <dd>&nbsp;</dd>
+                            <dt class="opacity"><span class="mif-phone fg-steel"></span> Phone</dt>
+                            <dd>{{$cr->phone}}</dd>
+                            <dd>&nbsp;</dd>
+                            <dt class="opacity"><span class="mif-printer fg-steel"></span> Fax</dt>
+                            <dd>{{$cr->fax}}</dd>
+                            <dt class="opacity"><span class="mif-envelop fg-steel"></span> Email</dt>
+                            <dd><a target="_blank" href="mailto:info@kccl-bd.com">{{$cr->email}}</a></dd>
+                            <dd>&nbsp;</dd>
+                            <dt class="opacity"><span class="mif-display fg-steel"></span> Website</dt>
+                            <dd><a href="http://www.kohinoor-bd.com/" target="_blank">{{$cr->web}}</a></dd>
+                        </dl>	
+                    @endforeach
                 </fieldset>     
                 <div class="padding10"></div>
                 <fieldset class="dtn-outline">
                     <legend class="sub-header align-center">Corporate Office</legend>
-                    <dl>
-                        <dt class="opacity"><span class="mif-location fg-steel"></span> Address</dt>
-                        <dd>Orion House, 153-154 Tejgaon I/A, Dhaka-1208</dd>
-                        <dd>&nbsp;</dd>
-                        <dt class="opacity"><span class="mif-phone fg-steel"></span> Phone</dt>
-                        <dd>+88-02-8870133</dd>
-                        <dt class="opacity"><span class="mif-printer fg-steel"></span> Fax</dt>
-                        <dd>+88-02-8870130</dd>
-                    </dl>	
+                        @foreach($registerOffice as $rg)
+                            <dl>
+                                <dt class="opacity"><span class="mif-location fg-steel"></span> Address</dt>
+                                <dd>{{$rg->address}}</dd>
+                                <dd>&nbsp;</dd>
+                                <dt class="opacity"><span class="mif-phone fg-steel"></span> Phone</dt>
+                                <dd>{{$rg->phone}}</dd>
+                                <dt class="opacity"><span class="mif-printer fg-steel"></span> Fax</dt>
+                                <dd>{{$rg->fax}}</dd>
+                            </dl>
+                        @endforeach
                 </fieldset>
                 <div class="padding10"></div>
             </div>	
         </div>
     </div>										
 </section>
+@endsection

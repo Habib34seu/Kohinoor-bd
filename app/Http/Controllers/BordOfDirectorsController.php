@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\BordOfDirectors;
+use App\Models\CorporateOffice;
+use App\Models\RegistredOffice;
 use Illuminate\Http\Request;
 
 class BordOfDirectorsController extends Controller
@@ -14,7 +16,9 @@ class BordOfDirectorsController extends Controller
      */
     public function index()
     {
-        return view('BordOfDirector.index');
+        $corporateOffice = CorporateOffice::all();
+        $registerOffice = RegistredOffice::all();
+        return view('frontend.bordOfDirector',compact('corporateOffice','registerOffice'));
     }
     
 }
