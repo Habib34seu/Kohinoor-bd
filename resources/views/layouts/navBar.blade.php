@@ -79,6 +79,30 @@
             </ul>
           </li> 
           <li class="nav-item has-treeview">
+            <a href="/annual" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Annual Report
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item has-treeview">
+            <a href="/halfyear" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Halfyearly Report
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item has-treeview">
+            <a href="quater" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Quaterly Report
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>

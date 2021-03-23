@@ -34,38 +34,16 @@
                     <div id="collapse1" class="panel-collapse collapse">
                         <div class="panel-body">
                             <div class='row'>
-                                <div class="col-3"style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
+                                @foreach($annual as $i)
+                                    <div class="col-3"style="margin-left: 6%;">
+                                        <a target="_blank" href="{{asset('image/annual_report/pdf/').'/'.$i->pdf}}">
+                                            <img 
+                                                class="img-responsive img-thumbnail" alt="2019-20" 
+                                                src="{{asset('image/annual_report/thumb/').'/'.$i->thumb_img}}"
+                                                style="width: 150px;height: 190px;">
+                                        </a>
+                                    </div>
+                                @endforeach
                             </div>
                         </div>
                     </div>
@@ -82,38 +60,17 @@
                     <div id="collapse2" class="panel-collapse collapse">
                         <div class="panel-body">
                             <div class='row'>
-                                <div class="col-3"style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
+                                @foreach($halfyearly as $i)
+                                    <div class="col-3"style="margin-left: 6%;">
+                                        <a target="_blank" href="{{asset('image/halfyearly_report/pdf/').'/'.$i->pdf}}">
+                                            <img 
+                                                class="img-responsive img-thumbnail" alt="2019-20" 
+                                                src="{{asset('image/halfyearly_report/thumb/').'/'.$i->thumb_img}}"
+                                                style="width: 150px;height: 190px;">
+                                        </a>
+                                    </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>
@@ -130,38 +87,17 @@
                     <div id="collapse3" class="panel-collapse collapse">
                         <div class="panel-body">
                             <div class='row'>
-                                <div class="col-3"style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
-                                <div class="col-3" style="margin-left: 6%;">
-                                     <a target="_blank" href="https://www.beximco.com/storage/app/media/Reports/beximco-annual-2019-20.pdf">
-                                        <img 
-                                            class="img-responsive img-thumbnail" alt="2019-20" 
-                                            src="https://www.beximco.com/storage/app/media/Reports/beximco-2019-20.jpg" 
-                                            style="width: 150px;height: 190px;">
-                                     </a>
-                                </div>
+                               @foreach($quater as $i)
+                                    <div class="col-3"style="margin-left: 6%;">
+                                        <a target="_blank" href="{{asset('image/quaterly_report/pdf/').'/'.$i->pdf}}">
+                                            <img 
+                                                class="img-responsive img-thumbnail" alt="2019-20" 
+                                                src="{{asset('image/quaterly_report/thumb/').'/'.$i->thumb_img}}"
+                                                style="width: 150px;height: 190px;">
+                                        </a>
+                                    </div>
+                                @endforeach
+                                
                             </div>
                         </div>
                     </div>
