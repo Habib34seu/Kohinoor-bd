@@ -25,7 +25,7 @@ class BrandController extends Controller
      */
     public function create()
     {
-        //
+        return view('adminPage.brand.create');
     }
 
     /**
@@ -36,7 +36,27 @@ class BrandController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'             =>'required',
+            'img'              =>'required',
+        ]);
+
+        $fileName = null;
+        if (request()->hasFile('img')) {
+            $file = request()->file('img');
+            $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+            $file->move('./image/brand/', $fileName);    
+        }
+
+    $brand=Brand::create([
+        'name'        => $request->input('name'),
+        'img'         => $fileName,
+    ]);
+    if($brand){
+        return redirect()->back();
+       }
+  
+       return 'failed'; 
     }
 
     /**

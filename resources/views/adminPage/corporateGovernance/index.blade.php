@@ -32,7 +32,14 @@
               <tr>
                 <td>{{$pc->id}}</td>
                 <td>{{$pc->name}}</td>
-                <td> edit </td>
+                <td> 
+                  <a href="" class="btn btn-info">
+                      Edit
+                  </a> 
+                  <a href="" class="btn btn-danger">
+                      Delete
+                  </a> 
+                </td>
               </tr>
               @endforeach
               </tbody>

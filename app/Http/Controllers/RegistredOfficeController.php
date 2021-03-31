@@ -19,7 +19,10 @@ class RegistredOfficeController extends Controller
         return view('adminPage.registerdOffice.index',['registredOffice'=>$registredOffice]);
     }
 
-
+    public function create()
+    {
+        return view('adminPage.registerdOffice.create');
+    }
 
     /**
      * Store a newly created resource in storage.
@@ -34,15 +37,21 @@ class RegistredOfficeController extends Controller
             'email' =>'required',
             'phone' =>'required',
             'fax' =>'required',
+            'web' =>'required',
         ]);
         $registredOffice=RegistredOffice::create([ 
             'address' => $request->address,
             'email' => $request->email,
             'phone' => $request->phone,
             'fax' => $request->fax,
+            'web' => $request->web,
 
         ]);
-    return response()->json($registredOffice,200);
+        if($registredOffice){
+            return redirect()->back();
+           }
+      
+           return 'failed'; 
     }
 
     /**

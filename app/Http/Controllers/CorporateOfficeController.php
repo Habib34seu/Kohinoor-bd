@@ -26,7 +26,7 @@ class CorporateOfficeController extends Controller
      */
     public function create()
     {
-        
+        return view('adminPage.corporateOffice.create');  
     }
 
     /**
@@ -42,15 +42,21 @@ class CorporateOfficeController extends Controller
             'email' =>'required',
             'phone' =>'required',
             'fax' =>'required',
+            'web' =>'required',
         ]);
         $corporateOffice=CorporateOffice::create([ 
             'address' => $request->address,
             'email' => $request->email,
             'phone' => $request->phone,
             'fax' => $request->fax,
+            'web' => $request->web
 
         ]);
-    return response()->json($corporateOffice,200);
+        if($corporateOffice){
+            return redirect()->back();
+           }
+      
+           return 'failed'; 
     }
 
     /**

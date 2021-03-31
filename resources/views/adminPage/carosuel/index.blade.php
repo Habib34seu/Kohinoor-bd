@@ -10,9 +10,7 @@
               <div class="card-header d-flex bd-highlight">
                     <h3 class="p-2 flex-grow-1 bd-highlight">Caurosel</h3>
                     <div class="p-2 bd-highlight">
-                        <button type="button" class="btn btn-info" data-toggle="modal" data-target="#modal-create">
-                            <i class="far fa-plus-square"></i> Add New
-                        </button>
+                    <a href="{{route('caurosel.create')}}" class="btn btn-info" ><i class="far fa-plus-square"></i> Add New</a>
                     </div>
               </div>
           </div>
@@ -24,7 +22,6 @@
                   <tr>
                     <th>ID</th>
                     <th>Image</th>
-                    
                     <th>Action</th>
                   </tr>
      
@@ -33,9 +30,18 @@
               @foreach ($caurosel as $cu)
               <tr>
                 <td>{{$cu->id}}</td>
-                <td>{{$cu->image}}</td>
+                <td>
+                <img class="bd-placeholder-img " width="600px"height="150px" src="{{asset('image/caurosel/').'/'.$cu->image}}">
+                </td>
                 
-                <td> edit </td>
+                <td> 
+                  <a href="" class="btn btn-info">
+                      Edit
+                  </a> 
+                  <a href="" class="btn btn-danger">
+                      Delete
+                  </a> 
+                </td>
               </tr>
               @endforeach
               </tbody>

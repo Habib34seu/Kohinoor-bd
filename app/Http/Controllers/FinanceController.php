@@ -2,28 +2,20 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Product;
-use App\Models\ProductCat;
-use App\Models\Brand;
+use App\Models\Finance;
 use Illuminate\Http\Request;
 
-class ProductController extends Controller
+class FinanceController extends Controller
 {
     /**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
      */
-
-    // public function index_detail()
-    // {
-    //     $product = Product :: get();
-    //     return view('adminPage.product.product_detail');
-    // }
     public function index()
     {
-        $product = Product :: get();
-        return view('adminPage.product.index',['product'=>$product]);
+        $finance= Finance::get();
+        return view('adminPage.finance.index',['finance'=>$finance]);
     }
 
     /**
@@ -33,9 +25,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        $productCat = ProductCat :: get();
-        $brand = Brand :: get();
-        return view('adminPage.product.create',compact('productCat','brand'));
+        return view('adminPage.finance.create');
     }
 
     /**
@@ -49,26 +39,28 @@ class ProductController extends Controller
         $request->validate([
             'name'             =>'required',
             'img'              =>'required',
-            'desc'             =>'required',
-            'pcat_id'          =>'required',
-            'brand_id'         =>'required',
+            'pdf'              =>'required',
         ]);
 
         $fileName = null;
         if (request()->hasFile('img')) {
             $file = request()->file('img');
             $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
-            $file->move('./image/product/', $fileName);    
+            $file->move('./image/admin_finance/thumb/', $fileName);    
+        }
+        $pdfName = null;
+        if (request()->hasFile('pdf')) {
+            $file = request()->file('pdf');
+            $pdfName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+            $file->move('./image/admin_finance/pdf/', $pdfName);    
         }
 
-    $product=Product::create([
+    $finance=Finance::create([
         'name'        => $request->input('name'),
         'img'         => $fileName,
-        'desc'        => $request->input('desc'),
-        'pcat_id'     => $request->input('pcat_id'),
-        'brand_id'    => $request->input('brand_id'),
+        'pdf'         => $pdfName,
     ]);
-    if($product){
+    if($finance){
         return redirect()->back();
        }
   
@@ -78,21 +70,21 @@ class ProductController extends Controller
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Finance  $finance
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show(Finance $finance)
     {
-        $product=Product::where('id',$id)->first();
-        return view("adminPage.product.product_detail",compact('product')); 
+        //
     }
+
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Finance  $finance
      * @return \Illuminate\Http\Response
      */
-    public function edit(Product $product)
+    public function edit(Finance $finance)
     {
         //
     }
@@ -101,10 +93,10 @@ class ProductController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Finance  $finance
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Product $product)
+    public function update(Request $request, Finance $finance)
     {
         //
     }
@@ -112,10 +104,10 @@ class ProductController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Product  $product
+     * @param  \App\Models\Finance  $finance
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Product $product)
+    public function destroy(Finance $finance)
     {
         //
     }

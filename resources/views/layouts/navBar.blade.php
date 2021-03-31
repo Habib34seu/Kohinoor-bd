@@ -103,6 +103,22 @@
             </a>
           </li> 
           <li class="nav-item has-treeview">
+            <a href="/product" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Product
+              </p>
+            </a>
+          </li> 
+          <li class="nav-item has-treeview">
+            <a href="/finance" class="nav-link">
+              <i class="nav-icon fas fa-copy"></i>
+              <p>
+               Finance
+              </p>
+            </a>
+          </li>
+          <li class="nav-item has-treeview">
             <a href="#" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>

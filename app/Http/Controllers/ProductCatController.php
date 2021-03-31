@@ -25,7 +25,7 @@ class ProductCatController extends Controller
      */
     public function create()
     {
-        //
+        return view('adminPage.productCat.create');
     }
 
     /**
@@ -36,7 +36,17 @@ class ProductCatController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'name'             =>'required',
+        ]);
+    $productCat=ProductCat::create([
+        'name'        => $request->input('name'),
+    ]);
+    if($productCat){
+        return redirect()->back();
+       }
+  
+       return 'failed';  
     }
 
     /**
