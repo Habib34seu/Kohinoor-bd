@@ -5,6 +5,13 @@
 	font-weight:normal;
 	font-style:normal;
 }
+.dropdown-toggle::after {
+    
+     border-top: .0em solid; 
+     border-right: .0em solid transparent; 
+    border-bottom: 0;
+   
+}
 body {
 	font-family:'Arimo', sans-serif;
 }

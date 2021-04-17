@@ -9,6 +9,14 @@
                 <p>
                 {{$product->desc}}
                 </p>
+                <h4>Specialization</h4>
+                <p>
+                {{$product->prod_spe_desc}}
+                </p>
+                <h4>Effictiveness</h4>
+                <p>
+                {{$product->prod_eff_desc}}
+                </p>
             </div>
             <div class="cell colspan6 mask zoom block-shadow" style="height: 360px;">
                 <img src="{{asset('image/product/').'/'.$product->img}}"/>

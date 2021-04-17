@@ -14,7 +14,13 @@ class NewsController extends Controller
      */
     public function index()
     {
-        return view('news.index');
+        $news = News::get();
+        return view('news.index',compact('news'));
+    }
+    public function admin_index()
+    {
+        $news = News::get();
+        return view('adminPage.adminNews.index',compact('news'));
     }
 
     /**
@@ -24,7 +30,7 @@ class NewsController extends Controller
      */
     public function create()
     {
-        //
+        return view('adminPage.adminNews.create');
     }
 
     /**
@@ -35,7 +41,29 @@ class NewsController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'title'                      =>'required',
+            'image'                       =>'required',
+            'desc'                      =>'required',
+        ]);
+
+        $fileName = null;
+        if (request()->hasFile('image')) {
+            $file = request()->file('image');
+            $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+            $file->move('./image/newsImg/', $fileName);    
+        }
+
+    $news=News::create([
+        'title'                 => $request->input('title'),
+        'image'                  => $fileName,
+        'desc'                 => $request->input('desc'),
+    ]);
+    if($news){
+        return redirect()->back();
+       }
+  
+       return 'failed'; 
     }
 
     /**

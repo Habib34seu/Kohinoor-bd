@@ -47,11 +47,13 @@ class ProductController extends Controller
     public function store(Request $request)
     {
         $request->validate([
-            'name'             =>'required',
-            'img'              =>'required',
-            'desc'             =>'required',
-            'pcat_id'          =>'required',
-            'brand_id'         =>'required',
+            'name'                      =>'required',
+            'img'                       =>'required',
+            'desc'                      =>'required',
+            'prod_spe_desc'             =>'required',
+            'prod_eff_desc'             =>'required',
+            'pcat_id'                   =>'required',
+            'brand_id'                  =>'required',
         ]);
 
         $fileName = null;
@@ -62,11 +64,13 @@ class ProductController extends Controller
         }
 
     $product=Product::create([
-        'name'        => $request->input('name'),
-        'img'         => $fileName,
-        'desc'        => $request->input('desc'),
-        'pcat_id'     => $request->input('pcat_id'),
-        'brand_id'    => $request->input('brand_id'),
+        'name'                 => $request->input('name'),
+        'img'                  => $fileName,
+        'desc'                 => $request->input('desc'),
+        'prod_spe_desc'        => $request->input('prod_spe_desc'),
+        'prod_eff_desc'        => $request->input('prod_eff_desc'),
+        'pcat_id'              => $request->input('pcat_id'),
+        'brand_id'             => $request->input('brand_id'),
     ]);
     if($product){
         return redirect()->back();
