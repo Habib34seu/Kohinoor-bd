@@ -7,7 +7,7 @@
                 <div class="cell colspan3 padding10 align-center text-small">
                     <a href="javascript:void();" onclick="toggleMetroCharm('#id1770', 'top')">
                         <div class="bg-white block-shadow"><img src="{{asset('image/bord_of_director/f.jpg')}}">
-                            <div class="padding5"><strong>Mr. Mohammad Obaidul Karim</strong></div>
+                            <div class="padding5"><strong>Mr. Obaidul Karim</strong></div>
                             <div class="padding20 no-padding-top">Chairman</div>
                         </div>
                     </a>
@@ -15,9 +15,9 @@
                 <div data-role="charm" data-position="top" id="id1770" class="bg-darkCobalt fg-white charm top-side" style="opacity: 1; display: none;">
                     <div class="container"> 
                    
-                        <h3>Mr. Mohammad Obaidul Karim, <small class="fg-grayLighter">Chairman</small></h3>
+                        <h3>Mr. Obaidul Karim, <small class="fg-grayLighter">Chairman</small></h3>
                         <p class="opacity align-justify">
-                            Mr. Mohammad Obaidul Karim is a distinguished self-achieved industrialist & businessman. Mr. Karim’s business career started in the early 1980s with his first pharmaceutical company named Orion Laboratories Limited, which is now known as Orion Pharma Limited. Mr. Karim turned the company into one of the most successful businesses of the country. Later in 1992-1993, Mr. Karim acquired the then ailing
+                            Mr. Obaidul Karim is a distinguished self-achieved industrialist & businessman. Mr. Karim’s business career started in the early 1980s with his first pharmaceutical company named Orion Laboratories Limited, which is now known as Orion Pharma Limited. Mr. Karim turned the company into one of the most successful businesses of the country. Later in 1992-1993, Mr. Karim acquired the then ailing
                             “Kohinoor Chemical Company (Bangladesh) Limited” (KCCL) and within a short period of time took it to new heights.
 
                             He is the Founder of Orion Group and established the group into one of the largest conglomerates in Bangladesh with his futuristic attitude, determined will and a burning passion. He heads the Group through his rich experience in diversified sectors. He is an innovative, self-motivated and enterprising Bangladeshi business icon who has instrumented his success in the field of diversified business portfolios. All concerns of Orion Group were formed under his dynamic leadership and management power which have received various industrial recognitions. 
@@ -121,6 +121,32 @@
             </div>
             <div class="row flex-just-center">
 
+            <div class="cell colspan3 padding10 align-center text-small">
+                    <a href="javascript:void();" onclick="toggleMetroCharm('#id1775', 'top')">
+                        <div class="bg-white block-shadow"><img src="{{asset('image/bord_of_director/8.jpg')}}" alt="Mr. Kamran Tanvirur Rahman">
+                            <div class="padding5"><strong>Mrs. Nurun Nahar</strong></div>
+                            <div class="padding20 no-padding-top">Director</div>
+                        </div>
+                    </a>
+                </div>
+                <div data-role="charm" data-position="top" id="id1775" class="bg-darkCobalt fg-white charm top-side" style="opacity: 1; display: none;">
+                    <div class="container"> 	
+                        <h3>Mrs. Nurun Nahar, <small class="fg-grayLighter">Director</small></h3>
+                        <p class="opacity align-justify">
+                        Mrs. Nurun Nahar completed her MSS in Political Science from University of Dhaka. She is the wife of Mr. Md. Ebadul Karim and one 
+                        of the Directors of Kohinoor Chemical Company (Bangladesh) Limited. She has been associated with KCCL from the inception of the 
+                        company. She has been engaged with the Company by supervising the HR department of KCCL.
+                        Mrs. Nurun Nahar is the Chairman of BEACON Pharmaceuticals Limited, BEACON Cephalosporin Limited, BEACON  Nutraceuticals Limited, 
+                        BEACON  Development Limited, BEACON Power System Limited, BEACON Oncology Limited, MEK Auto Bricks Limited, MEK Indusries Limited, 
+                        MEK Pharmatech Limited.  She is also the Vice Chairman of Mujibunnessa Medical College & Hospital Limited and the Director of 
+                        BEACON Medicare Limited, BEACON Point Limited and BEACON Economic Zone Limited.  
+                    
+                        </p>
+                    </div> 
+                    <span class="charm-closer"></span>
+                </div>
+                
+
                 <div class="cell colspan3 padding10 align-center text-small">
                     <a href="javascript:void();" onclick="toggleMetroCharm('#id1774', 'top')">
                         <div class="bg-white block-shadow"><img src="{{asset('image/bord_of_director/4.jpg')}}">
@@ -170,31 +196,6 @@
                         many companies, Mrs. Karim is actively involved in various religious and philanthropic activities in the fields of education, 
                         human resources and disaster relief. Mrs. Karim is also involved with the Orion Renal and General Hospital, which provides partly
                         free medication to the underprivileged of the country.
-                    
-                        </p>
-                    </div> 
-                    <span class="charm-closer"></span>
-                </div>
-
-                <div class="cell colspan3 padding10 align-center text-small">
-                    <a href="javascript:void();" onclick="toggleMetroCharm('#id1775', 'top')">
-                        <div class="bg-white block-shadow"><img src="{{asset('image/bord_of_director/8.jpg')}}" alt="Mr. Kamran Tanvirur Rahman">
-                            <div class="padding5"><strong>Mrs. Nurun Nahar</strong></div>
-                            <div class="padding20 no-padding-top">Director</div>
-                        </div>
-                    </a>
-                </div>
-                <div data-role="charm" data-position="top" id="id1775" class="bg-darkCobalt fg-white charm top-side" style="opacity: 1; display: none;">
-                    <div class="container"> 	
-                        <h3>Mrs. Nurun Nahar, <small class="fg-grayLighter">Director</small></h3>
-                        <p class="opacity align-justify">
-                        Mrs. Nurun Nahar completed her MSS in Political Science from University of Dhaka. She is the wife of Mr. Md. Ebadul Karim and one 
-                        of the Directors of Kohinoor Chemical Company (Bangladesh) Limited. She has been associated with KCCL from the inception of the 
-                        company. She has been engaged with the Company by supervising the HR department of KCCL.
-                        Mrs. Nurun Nahar is the Chairman of BEACON Pharmaceuticals Limited, BEACON Cephalosporin Limited, BEACON  Nutraceuticals Limited, 
-                        BEACON  Development Limited, BEACON Power System Limited, BEACON Oncology Limited, MEK Auto Bricks Limited, MEK Indusries Limited, 
-                        MEK Pharmatech Limited.  She is also the Vice Chairman of Mujibunnessa Medical College & Hospital Limited and the Director of 
-                        BEACON Medicare Limited, BEACON Point Limited and BEACON Economic Zone Limited.  
                     
                         </p>
                     </div> 

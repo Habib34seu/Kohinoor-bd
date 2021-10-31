@@ -2,7 +2,12 @@
     Overview
 </div>
 <p>
-Kohinoor Chemical Company (Bangladesh) Limited (KCCL) is the oldest and largest national Soap, Cosmetics and Toiletries manufacturer and marketer of Bangladesh. KCCL started its business in 1956. After the independence of Bangladesh, KCCL became a fully government owned company under the direct control of  Bangladesh Chemical Industries Corporation (BCIC) up to May 05, 1988. A few of the employees, who had been laid off during the liberation war, were re-absorbed in the company. It was transformed into a Public Limited Company under Companies Act 1913 and was named as Kohinoor Chemical Company (Bangladesh) Limited from May 05, 1988.
+Kohinoor Chemical Company (Bangladesh) Limited (KCCL) is the oldest and largest national Soap, Cosmetics 
+and Toiletries manufacturer and marketer of Bangladesh. KCCL started its business in 1956. After the 
+independence of Bangladesh, KCCL became a fully government owned company under the direct control of  
+Bangladesh Chemical Industries Corporation (BCIC) up to May 05, 1988.  It was transformed into a Public 
+Limited Company under Companies Act 1913 and was named as Kohinoor Chemical Company (Bangladesh) Limited 
+from May 05, 1988.
 <p>
 
 <!-- <div class="sub-header">Operations</div>

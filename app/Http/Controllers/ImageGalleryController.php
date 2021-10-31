@@ -14,7 +14,13 @@ class ImageGalleryController extends Controller
      */
     public function index()
     {
-        return view('imageGlry.index');
+        $imgGallery = ImageGallery::get();
+        return view('imageGlry.index',compact('imgGallery'));
+    }
+    public function index_admin()
+    {
+        $imgGallery = ImageGallery::get();
+        return view('adminPage.adminImageGallery.index',compact('imgGallery'));
     }
 
     /**
@@ -24,7 +30,7 @@ class ImageGalleryController extends Controller
      */
     public function create()
     {
-        //
+        return view('adminPage.adminImageGallery.create');
     }
 
     /**
@@ -35,7 +41,23 @@ class ImageGalleryController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $request->validate([
+            'image' =>'required',
+        ]);
+        $fileName = null;
+        if (request()->hasFile('image')) {
+            $file = request()->file('image');
+            $fileName = md5($file->getClientOriginalName() . time()) . "." . $file->getClientOriginalExtension();
+            $file->move('./image/imageGallery/', $fileName);    
+        }
+        $imgGallery=ImageGallery::create([ 
+            'image' => $fileName,
+        ]);
+        if($imgGallery){
+            return redirect()->back();
+        }
+      
+        return 'failed'; 
     }
 
     /**

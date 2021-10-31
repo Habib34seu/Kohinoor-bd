@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\AnnualReport;
+use App\Models\AnnualReportCat;
 use Illuminate\Http\Request;
 
 class AnnualReportController extends Controller
@@ -25,7 +26,8 @@ class AnnualReportController extends Controller
      */
     public function create()
     {
-        return view('adminPage.admin_annual.create');
+        $annualReportCat = AnnualReportCat :: get();
+        return view('adminPage.admin_annual.create',compact('annualReportCat'));
     }
 
     /**
@@ -40,6 +42,7 @@ class AnnualReportController extends Controller
             'name'             =>'required',
             'thumb_img'        =>'required',
             'pdf'              =>'required',
+            'catreport_id'     =>'required',
         ]);
 
         $fileName = null;
@@ -56,9 +59,10 @@ class AnnualReportController extends Controller
         }
 
     $annual=AnnualReport::create([
-        'name'        => $request->input('name'),
-        'thumb_img'   => $fileName,
-        'pdf'         => $pdfName,
+        'name'                     => $request->input('name'),
+        'thumb_img'                => $fileName,
+        'pdf'                      => $pdfName,
+        'catreport_id'             => $request->input('catreport_id'),
     ]);
     if($annual){
         return redirect()->back();

@@ -5,7 +5,7 @@
 <section class="container">
   <div class="row">
     <div class="cell colspan12">						
-      <img  src="{{asset('image/bord_of_director/values.jpg')}}" alt="Mission, Vision and Values"  />
+      <img  src="{{asset('image/bord_of_director/Mission.png')}}" alt="Mission, Vision and Values"  />
     </div>				
   </div>	
   <div class="row">				
@@ -68,7 +68,7 @@
         <div>
             <fieldset class="dtn-outline">
                     <legend class="sub-header align-center">Registered Office and Factory</legend>
-                @foreach($corporateOffice as $cr)
+                @foreach($registerOffice as $cr)
                     <dl>
                         <dt class="opacity"><span class="mif-location fg-steel"></span>Address</dt>
                         <dd>{{$cr->address}}</dd>
@@ -89,7 +89,7 @@
         <div class="padding10"></div>
           <fieldset class="dtn-outline">
               <legend class="sub-header align-center">Corporate Office</legend>
-                  @foreach($registerOffice as $rg)
+                  @foreach($corporateOffice as $rg)
                       <dl>
                           <dt class="opacity"><span class="mif-location fg-steel"></span> Address</dt>
                           <dd>{{$rg->address}}</dd>
@@ -104,7 +104,7 @@
         <div class="padding10"></div>
       <div class="sub-header padding10 no-padding-left no-padding-right bg-darkCobalt fg-white align-center">Corporate Video</div>
       <div>
-        <iframe width="100%" height="" src="https://www.youtube.com/watch?v=oAn8jiMnuwA" frameborder="0" allowfullscreen></iframe>
+        <iframe width="100%" height="" src="https://www.youtube.com/embed/outiv2GWJgs" frameborder="0" allowfullscreen></iframe>
       </div>
       </div>	
     </div>

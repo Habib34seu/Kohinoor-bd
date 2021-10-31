@@ -71,9 +71,15 @@
                 </a>
               </li>
               <li class="nav-item">
-                <a href="../layout/collapsed-sidebar.html" class="nav-link">
+                <a href="/imgGadmin" class="nav-link">
                   <i class="far fa-circle nav-icon"></i>
                   <p>Image Gallery</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="/annualreportcat" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Annual Report Category</p>
                 </a>
               </li>
             </ul>

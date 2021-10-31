@@ -8,6 +8,7 @@ use App\Models\RegistredOffice;
 use App\Models\HalfYearlyReport;
 use App\Models\QuaterlyReport;
 use App\Models\AnnualReport;
+use App\Models\AnnualReportCat;
 use App\Models\Finance;
 
 class ReportController extends Controller
@@ -20,8 +21,18 @@ class ReportController extends Controller
         $annual     = AnnualReport::latest()->get();
         $quater     = QuaterlyReport::latest()->get();
         $halfyearly = HalfYearlyReport::latest()->get();
+        $annualReportCat = AnnualReportCat::select('id','name')->get();
 
-        return view('frontendreport.index',compact('corporateOffice','registerOffice','annual','quater','halfyearly'));
+        // Annual Report start=======================================
+            $annualReportCatArray = AnnualReportCat::all();
+            $annualarry=[];
+            for($i=0;$i<count($annualReportCatArray); $i++){
+                $annualArry = AnnualReport::where('catreport_id',$annualReportCatArray[$i]['id'])->get();
+                $annualReportCatArray[$i]['annualarry']=$annualArry;
+            }
+       // Annual Report End=========================================
+
+        return view('frontendreport.index',compact('corporateOffice','registerOffice','quater','halfyearly'));
     }
     public function finance_index()
     {

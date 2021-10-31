@@ -3,10 +3,26 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 @extends('index')
 @section('content')
+@php
+use Illuminate\Http\Request;
+use App\Models\AnnualReport;
+use App\Models\AnnualReportCat;
+use App\Models\Finance;
+           
+    // Annual Report start=======================================
+        $annualReportCatArray = AnnualReportCat::all();
+        $annualarry=[];
+        for($i=0;$i<count($annualReportCatArray); $i++){
+            $annualArry = AnnualReport::where('catreport_id',$annualReportCatArray[$i]['id'])->get();
+            $annualReportCatArray[$i]['annualarry']=$annualArry;
+        }
+    // Annual Report End=========================================
+
+@endphp
 <section class="container">
   <div class="row">
     <div class="cell colspan12">						
-      <img  src="{{asset('image/bord_of_director/values.jpg')}}" alt="Mission, Vision and Values"  />
+      <img  src="{{asset('image/bord_of_director/Mission.png')}}" alt="Mission, Vision and Values"  />
     </div>				
   </div>	
   <div class="row">				
@@ -23,31 +39,35 @@
           <div class="cell colspan12 padding10 no-padding-left no-padding-right">
             <div class="panel-group"style="margin-top: 2%;">
                 <div class="panel panel-default">
-                    <div class="panel-heading">
+
+                    <div class="panel-heading" role="tab" id="headingTwo-0">
                         <h4 class="panel-title">
-                        <a>Annual Report</a>
-                        <a data-toggle="collapse" href="#collapse1">
-                        <i class="indicator glyphicon glyphicon-plus  pull-right" style="margin-top: .5%;" ></i>
-                        </a>
+                            <a class="investor-panel-title collapsed" role="button" data-toggle="collapse" data-parent="#accordion-in" href="#quarterly-report-beximco" aria-expanded="false" aria-controls="collapseTwo">
+                                Annual Report
+                                <i class="indicator glyphicon glyphicon-plus  pull-right"></i>
+                            </a>
                         </h4>
                     </div>
-                    <div id="collapse1" class="panel-collapse collapse">
+                    <div id="quarterly-report-beximco" class="panel-collapse quarterly-beximco collapse" role="tabpanel" aria-labelledby="headingTwo-0" aria-expanded="false" style="height: 0px;">
                         <div class="panel-body">
-                            <div class='row'>
-                                @foreach($annual as $i)
-                                    <div class="col-3"style="margin-left: 6%;">
-                                        <a target="_blank" href="{{asset('image/annual_report/pdf/').'/'.$i->pdf}}">
-                                            <img 
-                                                class="img-responsive img-thumbnail" alt="2019-20" 
-                                                src="{{asset('image/annual_report/thumb/').'/'.$i->thumb_img}}"
-                                                style="width: 150px;height: 190px;">
+                            @foreach($annualReportCatArray as $ancat)
+                            <div class="col-md-12 overflow-control">
+                                <h2 class="quarterly-report-h2" value="{{$ancat->id}}">{{$ancat->name}} </h2>
+                                @foreach($ancat->annualarry as $an)
+                                <div class="col-md-4 col-sm-4 col-xs-4"value="{{$an->id}}">
+                                        <a target="_blank"  href="{{asset('image/annual_report/pdf/').'/'.$an->pdf}}">
+                                            <img class="img-responsive img-thumbnail" src="{{asset('image/annual_report/thumb/').'/'.$an->thumb_img}}" width="">
                                         </a>
-                                    </div>
-                                @endforeach
+                                        <span class="quarterly-report-caption">{{$an->name}} </span>
+                                   
+                                </div>  
+                                @endforeach 
                             </div>
+                            @endforeach
                         </div>
                     </div>
                 </div>
+                
                 <div class="panel panel-default">
                     <div class="panel-heading">
                         <h4 class="panel-title">
@@ -133,7 +153,7 @@
             <div>
                 <fieldset class="dtn-outline">
                         <legend class="sub-header align-center">Registered Office and Factory</legend>
-                    @foreach($corporateOffice as $cr)
+                    @foreach($registerOffice  as $cr)
                         <dl>
                             <dt class="opacity"><span class="mif-location fg-steel"></span>Address</dt>
                             <dd>{{$cr->address}}</dd>
@@ -154,7 +174,7 @@
                 <div class="padding10"></div>
                 <fieldset class="dtn-outline">
                     <legend class="sub-header align-center">Corporate Office</legend>
-                        @foreach($registerOffice as $rg)
+                        @foreach($corporateOffice as $rg)
                             <dl>
                                 <dt class="opacity"><span class="mif-location fg-steel"></span> Address</dt>
                                 <dd>{{$rg->address}}</dd>

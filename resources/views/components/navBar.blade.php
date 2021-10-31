@@ -56,7 +56,7 @@ for($i=0;$i<count($productCatArray); $i++){
 						<li>
 							<a href="#" class="dropdown-toggle">PRODUCT</a>
 							<div class="m-menu-container" data-role="dropdown" data-no-close="true">
-								<div class="grid no-margin">
+								<div class="grid no-margin" style="width: 115%;">
 									<div class="row">
 									     @foreach( $productCatArray as $pcat)
 											<div class="cell colspan2">
@@ -78,7 +78,6 @@ for($i=0;$i<count($productCatArray); $i++){
 							</div>
 						</li>	
 						<li><a href="/report" >REPORT</a></li>	
-						<li><a href="#">PSI</a></li>	
 						<li>
 							<a href="#" class="dropdown-toggle">MEDIA</a>
 							<div class="m-menu-container" data-role="dropdown" data-no-close="true">

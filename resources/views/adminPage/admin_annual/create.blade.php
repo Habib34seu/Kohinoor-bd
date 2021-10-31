@@ -28,6 +28,16 @@
                   <input type="file" id="pdf" name ="pdf" class="form-control">
                 </div>
                 <div class="form-group">
+                  <label>Annual Report Category</label>
+                  <select class="form-control select2bs4" name="catreport_id" style="width: 100%;">
+                    @foreach($annualReportCat as $b)
+                      <option value="{{$b->id}}">{{ $b-> name }}</option>
+                    @endforeach
+                  </select>
+                </div>
+
+                
+                <div class="form-group">
                   <button type="submit" class="btn btn-info">Save</button>
                   <a  href="/annual" class="btn btn-danger">Back</a>
                 </div>

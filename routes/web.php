@@ -83,11 +83,12 @@ Route::delete('/vGellary/delete/{id}', [App\Http\Controllers\VideoGalleryControl
 
 //===========================================       Image Gallery     =====================================
 Route::get('/imgGllary', [App\Http\Controllers\ImageGalleryController::class, 'index']);
-Route::get('/imgGllary/create', [App\Http\Controllers\ImageGalleryController::class, 'create'])->name('imgGllary.create');
-Route::post('/imgGllary/store', [App\Http\Controllers\ImageGalleryController::class, 'store'])->name('imgGllary.store');
-Route::get('/imgGllary/edit/{id}', [App\Http\Controllers\ImageGalleryController::class, 'edit'])->name('imgGllary.edit');
-Route::put('/imgGllary/edit/{id}', [App\Http\Controllers\ImageGalleryController::class, 'update'])->name('imgGllary.update');
-Route::delete('/imgGllary/delete/{id}', [App\Http\Controllers\ImageGalleryController::class, 'destroy'])->name('imgGllary.destroy');
+Route::get('/imgGadmin', [App\Http\Controllers\ImageGalleryController::class, 'index_admin']);
+Route::get('/imgGadmin/create', [App\Http\Controllers\ImageGalleryController::class, 'create'])->name('imgGadmin.create');
+Route::post('/imgGadmin/store', [App\Http\Controllers\ImageGalleryController::class, 'store'])->name('imgGadmin.store');
+Route::get('/imgGadmin/edit/{id}', [App\Http\Controllers\ImageGalleryController::class, 'edit'])->name('imgGadmin.edit');
+Route::put('/imgGadmin/edit/{id}', [App\Http\Controllers\ImageGalleryController::class, 'update'])->name('imgGadmin.update');
+Route::delete('/imgGadmin/delete/{id}', [App\Http\Controllers\ImageGalleryController::class, 'destroy'])->name('imgGadmin.destroy');
 
 //===================================================================================================
 
@@ -136,3 +137,13 @@ Route::get('/caurosel/edit/{id}', [App\Http\Controllers\CauroselController::clas
 Route::put('/quacauroselter/edit/{id}', [App\Http\Controllers\CauroselController::class, 'update'])->name('caurosel.update');
 Route::delete('/caurosel/delete/{id}', [App\Http\Controllers\CauroselController::class, 'destroy'])->name('caurosel.destroy');
 //===================================================================================================
+
+
+//======================================       Annual Report Category     ==============================================================
+Route::get('/annualreportcat', [App\Http\Controllers\AnnualReoperCatController::class, 'index'])->name('annualreportcat');
+Route::get('/annualreportcat/create', [App\Http\Controllers\AnnualReoperCatController::class, 'create'])->name('annualreportcat.create');
+Route::post('/annualreportcat/store', [App\Http\Controllers\AnnualReoperCatController::class, 'store'])->name('annualreportcat.store');
+Route::get('/annualreportcat/edit/{id}', [App\Http\Controllers\AnnualReoperCatController::class, 'edit'])->name('annualreportcat.edit');
+Route::put('/annualreportcat/edit/{id}', [App\Http\Controllers\AnnualReoperCatController::class, 'update'])->name('annualreportcat.update');
+Route::delete('/annualreportcat/delete/{id}', [App\Http\Controllers\AnnualReoperCatController::class, 'destroy'])->name('annualreportcat.destroy');
+//========================================================================================================================================

@@ -4,9 +4,21 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
-        <title>Laravel</title>
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
+        <title>Kohinoor Chemical Company LTD</title>
+
+       
+        
+<!-- 
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.4.1/css/bootstrap.min.css" /> -->
+        
+
+
+
+      
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Arimo" rel="stylesheet">
 			<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
 			<link rel="stylesheet" href="{{asset('css/metro.css')}}" type="text/css">
 			<link rel="stylesheet" href="{{asset('css/metro-icons.css')}}" type="text/css">
@@ -18,7 +30,7 @@
 			<link rel="stylesheet" type="text/css" media="(max-width: 750px)" href="{{asset('css/slidemenu.animate.css')}}">
 			<link rel="stylesheet" type="text/css" media="(max-width: 750px)" href="{{asset('css/slidemenu.theme.light.css')}}">
 			<link rel="stylesheet" href="{{asset('css/aci-style.css')}}" type="text/css">
-			
+		
 
 			<script src="{{asset('js/jquery-11.0.min.js')}}" type="text/javascript"></script>
 			<script src="{{asset('js/jquery.slidemenu.min.js')}}" type="text/javascript"></script>
@@ -40,6 +52,9 @@
             <script type="text/javascript" src="{{asset('js/unitegallery.min.js')}}"></script>
             <script type="text/javascript" src="{{asset('js/ug-theme-tiles.js')}}"></script>
             <link rel="stylesheet" type="text/css" href="{{asset('css/unite-gallery.css')}}" />
+
+            <!-- include libraries(jQuery, bootstrap) -->
+
             
         <!-- start AjaxSearch header -->
         <script type="text/javascript">
@@ -48,7 +63,6 @@
         //]]>
         </script>
     </head>
-
     <body class="antialiased">
 
     <div class="flex-grid">
@@ -62,7 +76,7 @@
 			<section class="bg-cyan no-phone" style="background-color: #750465!important;">
 					@include('components.navBar')
 			</section>
-            <!--------- MENU LINKS End---------->
+                       <!--------- MENU LINKS End---------->
 		</header>
         
 		<!--------- Carousel ---------->
@@ -125,7 +139,6 @@ jQuery(document).ready(function(){
 
     });
 });
-
 </script>
         
     </body>

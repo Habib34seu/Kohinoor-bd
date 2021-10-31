@@ -18,8 +18,8 @@ class CreateProductsTable extends Migration
             $table->string('name');
             $table->string('desc',2000);
             $table->string('img');
-            $table->string('prod_spe_desc',2000);
-            $table->string('prod_eff_desc',2000);
+            $table->text('prod_spe_desc',8000);
+            $table->text('prod_eff_desc',8000);
             $table->bigInteger('brand_id');
             $table->bigInteger('pcat_id');
             $table->timestamps();

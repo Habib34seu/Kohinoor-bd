@@ -1,8 +1,8 @@
 <style>
-body {
+/* body {
   font-family: Verdana, sans-serif;
   margin: 0;
-}
+} */
 
 * {
   box-sizing: border-box;

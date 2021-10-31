@@ -15,6 +15,11 @@
 body {
 	font-family:'Arimo', sans-serif;
 }
+.row {
+   
+    margin-right: 0px; 
+    margin-left: -0px; 
+}
 p{
 	line-height:1.4rem;
 	font-size:0.9rem;
@@ -190,18 +195,18 @@ a:hover{
 	/* height:550px; */
 }
 
-#overlay-bg{
-	/* background-image: url("/image/pattern.png");  */
+/* #overlay-bg{
+	background-image: url("/image/pattern.png");  */
 	/* background-image: url("{{URL::asset('image/pattern.png')}}") ; */
-	/* background-image: */
+	/* background-image:
 	width:100%;
 	height:100%;
 	position:relative;
 	opacity:0.7;
 	z-index:2;
-}
+} */
 
-#slide-text {
+/* #slide-text {
     position: absolute;
     top: 40%;
     left: 17%;
@@ -213,7 +218,7 @@ a:hover{
 	color: #f0f0f0;
 	z-index:100;
 	text-align:left;
-}
+} */
 
 .m-menu{
 	background-color:transparent;

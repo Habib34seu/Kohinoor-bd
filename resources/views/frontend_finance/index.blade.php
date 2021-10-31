@@ -4,7 +4,7 @@
 <section class="container">
   <div class="row">
     <div class="cell colspan12">						
-      <img  src="{{asset('image/admin_finance/finance_img/financial.jpg')}}" alt="Financial Statements"  />
+    <img  src="{{asset('image/bord_of_director/Financial.png')}}"  />
     </div>				
   </div>	
   <div class="row">				

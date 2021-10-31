@@ -1,3 +1,4 @@
+
 @extends('index')
 @section('content')
 <section>
@@ -9,11 +10,11 @@
                 <p>
                 {{$product->desc}}
                 </p>
-                <h4>Specialization</h4>
+                <h3>Features :</h3>
                 <p>
                 {{$product->prod_spe_desc}}
                 </p>
-                <h4>Effictiveness</h4>
+                <h3>Benefits :</h3>
                 <p>
                 {{$product->prod_eff_desc}}
                 </p>

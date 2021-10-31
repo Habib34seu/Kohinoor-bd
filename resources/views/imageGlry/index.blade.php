@@ -1,36 +1,31 @@
 @extends('index')
 @section('content')
 <section class="container">
+	<div class="row">
+		<div class="cell colspan12">						
+			<img src="{{asset('image/imageGallery/ImagePic.png')}}" alt="Our News"  />
+		</div>				
+	</div>	
+	<div class="row">				
+		<div class="cell colspan9 padding20 no-padding-top no-padding-bottom corporate-title">											
+			<h1 class="fg-white">Image Gallery</h1>
+		</div>
+	</div>			
+</section>		
+<!----------- END Banner ----------------->	
+<section class="container">
     <div class="row">
       <div class="cell colspan9 padding20 bg-default" style="background-color:#f7f7ee">				
         <div class="row">
           <div class="cell colspan12 padding10 no-padding-left no-padding-right">
             <div id="gallery" style="display:none;">	
+              @foreach ($imgGallery as $i)
               <img alt=""
-              src="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-image="{{asset('image/brand/Fruity-Lip-balm.png')}}"
+              src="{{asset('image/imageGallery/').'/'.$i->image}}"
+              data-image="{{asset('image/imageGallery/').'/'.$i->image}}"
               data-description=""
               style="display:none">
-              <img alt=""
-              src="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-image="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-description=""
-              style="display:none">
-              <img alt=""
-              src="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-image="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-description=""
-              style="display:none">
-              <img alt=""
-              src="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-image="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-description=""
-              style="display:none">
-              <img alt=""
-              src="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-image="{{asset('image/brand/Fruity-Lip-balm.png')}}"
-              data-description=""
-              style="display:none">
+              @endforeach
             </div>	
           </div>
         </div>

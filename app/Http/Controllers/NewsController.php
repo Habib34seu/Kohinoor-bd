@@ -15,6 +15,7 @@ class NewsController extends Controller
     public function index()
     {
         $news = News::get();
+
         return view('news.index',compact('news'));
     }
     public function admin_index()
@@ -56,8 +57,8 @@ class NewsController extends Controller
 
     $news=News::create([
         'title'                 => $request->input('title'),
-        'image'                  => $fileName,
-        'desc'                 => $request->input('desc'),
+        'image'                 => $fileName,
+        'desc'                  => $request->input('desc'),
     ]);
     if($news){
         return redirect()->back();
